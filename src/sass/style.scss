@@ -19,9 +19,18 @@ body {
     overflow-x: hidden;     
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
 ::selection {
     color: #fff;
-    background-color: $main-blue;
+    background-color: black;
 }
 
 .container {
@@ -29,7 +38,10 @@ body {
     margin: 0 auto;
 }
 
+/* Подключение стилей заголовков и кнопок */
 @import 'blocks/titles/titles';
-/* @import 'blocks/buttons/buttons'; */
+@import 'blocks/buttons/buttons';
 
+/* Подключение стилей блоков сайта */
 @import 'blocks/demo-screen/demo-screen';
+@import 'blocks/recommendation/recommendation';

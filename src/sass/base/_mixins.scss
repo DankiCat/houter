@@ -1,0 +1,11 @@
+@mixin dash {
+    &::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 32px;
+        top: 8px;
+        left: -40px;
+        background-color: $main-orange;
+    }
+}
