@@ -1,8 +1,11 @@
+//импорт шрифта Lexend из Google Fonts API
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap');
 
+//импорт других стилевых файлов, содержащих переменные и миксины, которые будут использоваться в данном файле.
 @import 'base/variables';
 @import 'base/mixins';
 
+// мэин стили
 * {
     margin: 0;
     padding: 0;
@@ -11,3 +14,22 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+body {
+    overflow-x: hidden;     
+}
+
+::selection {
+    color: #fff;
+    background-color: $main-blue;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@import 'blocks/titles/titles';
+/* @import 'blocks/buttons/buttons'; */
+
+@import 'blocks/demo-screen/demo-screen';
