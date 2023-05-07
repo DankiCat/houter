@@ -4,14 +4,12 @@
     background: url('../images/house_main.png') right top / 50% no-repeat;
     position: relative;
     .blur {
-        img {
-            position: absolute;
-            width: 50vw;
-            height: 50vh;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
+        width: 48vw;
+        height: 68vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
     .navbar {
         width: 100%;
@@ -137,6 +135,9 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 22px;
+            .icon path {
+                fill: #fff;
+            }
         }
         &__partnership {
             margin-top: 32px;
