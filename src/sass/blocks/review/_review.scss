@@ -1,0 +1,119 @@
+.review {
+    margin-top: 129px;
+    &__subtitle {
+        position: relative;
+        @include dash_center;
+    }
+    &__carousel {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__items {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 56px;
+    }
+    &__item {
+        height: 505px;
+        position: relative;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+    &__card {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        position: absolute;
+        left: 64px;
+        top: 256px;
+        width: 612px;
+        background: #FFFFFF;
+        box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
+        border-radius: 16px;
+    }
+    &__card-title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        text-transform: capitalize;
+        color: $main-blue;
+    }
+    &__text {
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #626687;
+        opacity: 0.75;
+    }
+    &__wrapper {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 24px;
+    }
+    &__person {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+    }
+    &__avatar {
+        filter: drop-shadow(0px 9px 32px rgba(89, 92, 219, 0.1));
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: $gray-purple;
+        width: 386px;
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #0E1735;
+    }
+    &__rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        span {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: $gray-purple-darker;
+        }
+    }
+    &__controls {
+        width: 56px;
+        margin: 0 auto;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        grid-template: 16px;
+    }
+    &__control {
+        cursor: pointer;
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        background-color: $light-gray;
+        &_active {
+            background-color: $gray-purple-darker;
+        }
+    }
+}

@@ -9,3 +9,14 @@
         background-color: $main-orange;
     }
 }
+@mixin dash_center {
+    &::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 32px;
+        top: -9px;
+        left: calc(50% - 16px);
+        background-color: $main-orange;
+    }
+}
