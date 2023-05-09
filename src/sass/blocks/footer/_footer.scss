@@ -1,0 +1,77 @@
+.footer {
+    margin: 120px 0;
+    position: relative;
+    .blur {
+        z-index: -1;
+        width: 54vw;
+        height: 70vh;
+        position: absolute;
+        bottom: -120px;
+        right: 0;
+    }
+    &__navbar {
+        display: flex;
+        flex-direction: row;
+    }
+    &__biography {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin-right: 263px;
+    }
+    &__logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        span {
+            margin-left: 12px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $main-blue;
+        }
+    }
+    &__description {
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #626687;
+        opacity: 0.75;
+    }
+    &__social {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 24px;
+        margin-top: 24px;
+    }
+    &__column {
+        margin-right: 88px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #0E1735;
+    }
+    &__links {
+        margin-top: 24px;
+        list-style: none;
+    }
+    &__link {
+        margin-bottom: 18px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: capitalize;
+        color: $gray-purple;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

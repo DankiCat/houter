@@ -13,6 +13,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -54,3 +55,5 @@ a {
 @import 'blocks/tips/tips';  
 
 @import 'blocks/subscription/subscription';  
+
+@import 'blocks/footer/footer';
