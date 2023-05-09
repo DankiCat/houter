@@ -18,6 +18,7 @@
         justify-content: space-between;
         align-items: center;
         &__logo {
+            cursor: pointer;
             height: 100%;
             display: flex;
             align-items: center;
@@ -46,8 +47,10 @@
             line-height: 16px;
             text-transform: capitalize;
             color: #F0F3FD;
+            cursor: pointer;
             &_list {
                 display: flex;
+                align-items: center;
                 gap: 10px;
                 img {
                     width: 10.5px;
@@ -55,6 +58,7 @@
             }
         }
         &__sign-up {
+            cursor: pointer;
             margin-left: 55px;
             height: 46px;
             background: #D1FAE5;
@@ -64,6 +68,7 @@
             font-size: 14px;
             line-height: 22px;
             color: #047857;
+            border: none;
         }
     }
     .info {
@@ -166,7 +171,6 @@
         flex-direction: row;
         align-items: flex-start;
         gap: 16px;
-        /* width: calc(50vw - 50px); */
         width: 1000px;
         height: 104px;
         &__label {

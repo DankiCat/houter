@@ -17,9 +17,10 @@
         display: flex;
         flex-direction: column;
         width: 320px;
-        margin-right: 263px;
+        margin-right: 254px;
     }
     &__logo {
+        cursor: pointer;
         height: 100%;
         display: flex;
         align-items: center;

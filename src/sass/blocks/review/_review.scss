@@ -10,16 +10,42 @@
         flex-direction: column;
     }
     &__items {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 56px;
+        min-width: 0;
+        .slick-track{
+            display: flex;
+            flex-direction: row;
+        }
+        .slick-dots {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            width: -moz-fit-content;            
+            width: fit-content;
+            margin: 0 auto;
+            list-style: none;
+            height: 8px;
+            margin-top: 32px;
+            li {
+                button {
+                    display: none;
+                }
+                height: 8px;
+                width: 8px;
+                margin: 0 8px;
+                background-color: $light-gray;
+                border-radius: 50%;
+                transition: 0.2s all;
+                &.slick-active {
+                    background-color: $gray-purple-darker;
+                }
+            }
+        }
     }
     &__item {
         height: 505px;
         position: relative;
         cursor: pointer;
-        margin: 0 auto;
+        margin: 0 28px;
     }
     &__card {
         position: absolute;
@@ -43,6 +69,7 @@
         color: $main-blue;
     }
     &__text {
+        text-align: left;
         margin-top: 16px;
         font-weight: 400;
         font-size: 14px;
@@ -94,26 +121,6 @@
             font-size: 20px;
             line-height: 28px;
             color: $gray-purple-darker;
-        }
-    }
-    &__controls {
-        width: 56px;
-        margin: 0 auto;
-        margin-top: 32px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        grid-template: 16px;
-    }
-    &__control {
-        cursor: pointer;
-        width: 8px;
-        height: 8px;
-        border-radius: 4px;
-        background-color: $light-gray;
-        &_active {
-            background-color: $gray-purple-darker;
         }
     }
 }
