@@ -96,6 +96,7 @@
         margin-right: 60px;
     }
     &__contact-btn {
+        cursor: pointer;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -122,6 +123,7 @@
         position: absolute;
         top: 184px;
         left: 220px;
+        cursor: pointer;
     }
     &__medium-img {
         position: absolute;

@@ -43,7 +43,7 @@ a {
 @import 'blocks/buttons/buttons';
 
 /* Подключение стилей блоков сайта */
-@import 'blocks/demo-screen/demo-screen';
+@import 'blocks/demo/demo';
 
 @import 'blocks/recommendation/recommendation';
 
@@ -52,3 +52,5 @@ a {
 @import 'blocks/review/review';  
 
 @import 'blocks/tips/tips';  
+
+@import 'blocks/subscription/subscription';  
